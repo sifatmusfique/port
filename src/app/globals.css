@@ -1,0 +1,334 @@
+@import "tailwindcss";
+
+
+
+@keyframes bounce-slow {
+
+  0%,
+  100% {
+    transform: translateY(-5%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-fast {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+}
+
+.animate-pulse-fast {
+  animation: pulse-fast 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Custom Ripple Animation */
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+:root {
+  --background: #030014;
+  --foreground: #ededed;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: rgba(192, 38, 211, 0.4);
+  /* Fuchsia */
+  color: #fff;
+}
+
+
+/* Exact Grid Background */
+.bg-grid-white\/5 {
+  background-size: 30px 30px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Glassmorphism Utilities */
+.glass-nav {
+  background: rgba(3, 0, 20, 0.9);
+  /* Mobile Menu Blur: High Opacity Match */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: none !important;
+  box-shadow: none !important;
+  transform: translateZ(0);
+  /* Force GPU Layer */
+  will-change: transform;
+}
+
+
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  /* Tech Pill Style: bg-white/5 */
+  backdrop-filter: blur(12px);
+  /* Tech Pill Style: backdrop-blur-md */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Tech Pill Style: border-white/10 */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* Kept shadow for card depth */
+  transform: translateZ(0);
+  /* Force GPU Layer */
+}
+
+/* Hover Gradient Animation */
+.hover-gradient-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.hover-gradient-glow:hover::before {
+  opacity: 1;
+}
+
+/* Liquid Glass Effect */
+.glass-liquid {
+  background: rgba(3, 0, 20, 0.40);
+  /* Reduced opacity as requested */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transform: translateZ(0);
+  /* Force GPU Layer */
+  z-index: 20;
+}
+
+
+
+/* Moving Gradient Blobs */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 10s infinite;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(30px, -30px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-float {
+  animation: float 10s infinite ease-in-out;
+}
+
+/* Custom Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Page-wide Grid */
+.bg-grid-fixed {
+  background-size: 25px 25px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  mask-image: linear-gradient(to bottom, transparent, 5%, black, 95%, transparent);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #030014;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e1e2d;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d946ef;
+  /* fuchsia-500 */
+}
+
+/* Hide Scrollbar on Mobile */
+@media (max-width: 768px) {
+  html {
+    scrollbar-gutter: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html,
+  body {
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Fade In Right Animation */
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-right {
+  animation: fadeInRight 1s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* Custom Fade In Left Animation */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-left {
+  animation: fadeInLeft 1s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+/* Optimize AOS animations */
+[data-aos] {
+  will-change: transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1) !important;
+  /* Force premium easing */
+}
