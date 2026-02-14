@@ -11,10 +11,18 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   metadataBase: new URL('https://sifatmusfique.dev'),
-  title: "Sifat Musfique | Full Stack Developer & FIDE Chess Player",
-  description: "Portfolio of Sifat Musfique, a Full Stack Developer and FIDE Chess Player. Explore projects in AI, web development, and more.",
+  title: "Sifat Musfique | Software Developer & Researcher",
+  description: "Sifat Musfique is a software developer and researcher based in Bangladesh. CSE student at Varendra University specializing in PHP, React, and AI-driven technologies.",
   alternates: {
-    canonical: './',
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Sifat Musfique | Software Developer & Researcher",
+    description: "Software developer and researcher focusing on web infrastructure and AI-driven technologies.",
+    url: 'https://sifatmusfique.dev',
+    siteName: 'Sifat Musfique Portfolio',
+    locale: 'en_US',
+    type: 'website',
   },
 };
 
@@ -28,19 +36,35 @@ export default function RootLayout({ children }) {
         "url": "https://sifatmusfique.dev/",
         "mainEntityOfPage": "https://sifatmusfique.dev/",
         "name": "Sifat Musfique",
-        "jobTitle": "Software Developer",
-        "description": "Sifat Musfique is a software developer and researcher based in Bangladesh. He is a student of Computer Science and Engineering at Varendra University focusing on web infrastructure and AI-driven technologies.",
+        "jobTitle": "Software Developer and Researcher",
+        "description": "Sifat Musfique is a software developer and researcher based in Bangladesh. He is a Computer Science and Engineering (CSE) student at Varendra University focusing on web infrastructure and AI-driven technologies.",
         "nationality": "Bangladeshi",
+        "birthDate": "2005-06-12",
+        "birthPlace": {
+          "@type": "Place",
+          "name": "Naogaon, Bangladesh"
+        },
         "affiliation": {
           "@type": "EducationalOrganization",
           "name": "Varendra University",
           "url": "https://vu.edu.bd/"
         },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Varendra University"
+        },
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "name": "FIDE - International Chess Federation"
+          }
+        ],
         "brand": {
           "@type": "Brand",
-          "name": "TensorTide"
+          "name": "TensorTide",
+          "alternateName": "TensorTide Education"
         },
-        "knowsAbout": ["React", "PHP", "Web Development", "Chess Strategy", "AI-driven technologies"],
+        "knowsAbout": ["React", "PHP", "Python", "Web Development", "AI Orchestration", "Chess Strategy", "AI-driven technologies"],
         "homeLocation": {
           "@type": "Place",
           "name": "Rajshahi, Bangladesh"
@@ -61,7 +85,7 @@ export default function RootLayout({ children }) {
           "https://www.google.com/search?kgmid=/g/11yzdbf2km",
           "https://wikialpha.co/wiki/Sifat_Musfique",
           "https://www.crunchbase.com/person/sifat-musfique",
-          "https://www.wikidata.org/wiki/Q138035556",
+          "https://www.wikidata.org/wiki/Q132338166",
           "https://ratings.fide.com/profile/315105339",
           "https://scholar.google.com/citations?user=LsO3KMsAAAAJ",
           "https://www.researchgate.net/profile/Sifat-Musfique",

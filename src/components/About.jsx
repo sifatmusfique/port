@@ -36,11 +36,10 @@ const About = () => {
                             About <span className="bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">Me</span>
                         </h2>
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            Hello, I&apos;m Sifat Musfique, passionate about building smart and scalable web & mobile applications.
-                            I&apos;ve completed a full-stack development course and constantly explore new technologies to refine my skills.
+                            Sifat Musfique is a software developer and researcher based in Bangladesh. He is currently a student of Computer Science and Engineering at Varendra University in Rajshahi. With a technical focus on PHP, React, and Python-based automation, Sifat specializes in web infrastructure and the development of AI-driven technologies. Outside of engineering,he is a FIDE-registered chess player and manages 'TensorTide,' an online platform dedicated to educational content in math and science.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                            Focused on continuous learning, I aim to move towards AI and data science eventually.
+                            Focused on continuous learning, he aims to move towards AI and data science eventually.
                         </p>
 
                         <div className="flex flex-wrap gap-4 items-center">
