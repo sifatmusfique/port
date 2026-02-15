@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 import { FiUser, FiMail, FiMessageSquare, FiSend, FiShare2, FiMapPin, FiPhone } from "react-icons/fi";
 import Ripple from "./Ripple";
 
@@ -51,6 +51,14 @@ const Contact = () => {
             color: "text-blue-500",
             bg: "bg-blue-500/10",
             border: "border-blue-500/20"
+        },
+        {
+            icon: <FaFacebook className="text-blue-600" />,
+            title: "Facebook",
+            subtitle: "sifatmusfique",
+            href: "https://facebook.com/sifatmusfique",
+            bg: "bg-blue-600/10",
+            border: "border-blue-600/20"
         },
         {
             icon: <FaGithub className="text-gray-200" />,
