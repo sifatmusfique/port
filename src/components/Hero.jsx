@@ -58,9 +58,9 @@ const Hero = () => {
                     </div>
 
                     <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                        Full Stack Developer & <br />
+                        Software Developer & <br />
                         <span className="bg-gradient-to-r from-cyan-300 via-violet-500 to-fuchsia-500 bg-clip-text text-transparent animate-gradient-x bg-300% drop-shadow-[0_0_10px_rgba(139,92,246,0.3)]">
-                            Cybersecurity Analyst
+                            Researcher
                         </span>
                     </h1>
 
