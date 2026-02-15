@@ -18,6 +18,17 @@ export default function sitemap() {
             lastModified: new Date(),
             changeFrequency: 'yearly',
             priority: 1,
+            images: [
+                'https://sifatmusfique.dev/photos/Sifat_Musfique.png',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_chess.png',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_election.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_hoodie.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_live.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_night.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_pic.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_punjabi.jpg',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_stand.jpg',
+            ],
         },
         {
             url: `${baseUrl}/about`,
