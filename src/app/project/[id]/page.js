@@ -54,10 +54,16 @@ export default async function ProjectDetails({ params }) {
             <div className="max-w-6xl mx-auto">
 
                 {/* Navigation */}
-                <Link href="/#portfolio" className="inline-flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors mb-8 group">
-                    <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
-                    Back to Projects
-                </Link>
+                <div className="flex flex-col gap-4 mb-8">
+                    <Link href="/" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors group w-fit">
+                        <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
+                        Back to Home
+                    </Link>
+                    <Link href="/#portfolio" className="inline-flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors group w-fit">
+                        <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />
+                        Back to Projects
+                    </Link>
+                </div>
 
                 {/* Header / Hero */}
                 <div className="text-center mb-16 animate-fade-in-up">
