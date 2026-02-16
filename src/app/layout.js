@@ -24,6 +24,9 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  icons: {
+    icon: '/brain/metad.png',
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -99,18 +102,15 @@ export default function RootLayout({ children }) {
           "https://ratings.fide.com/profile/315105339",
           "https://www.researchgate.net/profile/Sifat-Musfique",
           "https://medium.com/@sifatmusfique",
+          "https://www.imdb.com/name/nm18221523/",
           "https://forem.com/sifatmusfique",
           "https://www.linkedin.com/in/sifatmusfique-dev",
           "https://dev.to/sifatmusfique",
           "https://forem.com/sifatmusfique",
           "https://hashnode.com/@sifatmusfique",
           "https://stackoverflow.com/users/32314667/sifat-musfique",
-          "https://codepen.io/sifatmusfique",
           "https://www.fiverr.com/sifatmusfique",
-          "https://www.xing.com/profile/Sifat_Musfique",
           "https://about.me/sifatmusfique",
-          "https://www.ted.com/profiles/51097968",
-          "https://gravatar.com/sifatmusfique",
           "https://www.facebook.com/sifatmusfique",
           "https://www.instagram.com/sifat.musfique",
           "https://www.skool.com/@sifat-musfique-8682"

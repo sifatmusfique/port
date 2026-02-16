@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaGithub, FaLinkedin, FaInstagram, FaChessKnight, FaWikipediaW } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaChessKnight, FaWikipediaW } from "react-icons/fa";
 
 const Hero = () => {
     const [text, setText] = React.useState("");
@@ -12,7 +12,7 @@ const Hero = () => {
     const phrases = [
         "Computer Science & Engg. Student",
         "Tech Enthusiast",
-        "FIDE Chess Player"
+        "System Architect"
     ];
 
     React.useEffect(() => {
@@ -69,7 +69,7 @@ const Hero = () => {
                             {text}
                             <span className="animate-pulse text-cyan-400">|</span>
                         </span>
-                        I build scalable web applications and craft intuitive user experiences using modern technologies.
+                        I architect scalable computational infrastructures and craft intuitive user experiences using modern technologies.
                     </div>
 
                     <div className="flex flex-wrap gap-4 pt-2 mb-8">
@@ -109,7 +109,6 @@ const Hero = () => {
                         {[
                             { icon: <FaGithub />, href: "https://github.com/sifatmusfique" },
                             { icon: <FaLinkedin />, href: "https://linkedin.com/in/sifatmusfique-dev" },
-                            { icon: <FaInstagram />, href: "https://instagram.com/tensortide" },
                             { icon: <FaWikipediaW />, href: "https://wikialpha.co/wiki/Sifat_Musfique" },
                             { icon: <FaChessKnight />, href: "https://ratings.fide.com/profile/315105339", rel: "me" }
                         ].map((social, index) => (
