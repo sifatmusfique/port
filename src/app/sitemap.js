@@ -54,6 +54,12 @@ export default function sitemap() {
             changeFrequency: 'yearly',
             priority: 0.5,
         },
+        {
+            url: `${baseUrl}/press`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+        },
     ];
 
     return [...routes, ...projectRoutes];
