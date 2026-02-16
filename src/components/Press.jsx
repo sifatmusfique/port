@@ -10,7 +10,7 @@ const Press = () => {
             icon: <FaAward className="text-3xl text-yellow-400" aria-label="Award Icon" />,
             items: [
                 {
-                    title: "Global Professional Rank: 3063",
+                    title: "Global Professional Rank: 943",
                     source: "Crunchbase",
                     desc: "Ranked among the top 0.1% of global innovators and founders for contributions to cloud architecture.",
                     link: "https://www.crunchbase.com/person/sifat-musfique",
