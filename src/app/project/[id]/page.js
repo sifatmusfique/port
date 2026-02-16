@@ -54,6 +54,58 @@ export default async function ProjectDetails({ params }) {
             <div className="max-w-6xl mx-auto">
 
                 {/* Navigation */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@graph": [
+                                {
+                                    "@type": "SoftwareApplication",
+                                    "name": project.title,
+                                    "description": project.description,
+                                    "applicationCategory": "WebApplication",
+                                    "operatingSystem": "Any",
+                                    "author": {
+                                        "@type": "Person",
+                                        "name": "Sifat Musfique",
+                                        "url": "https://sifatmusfique.dev"
+                                    },
+                                    "image": project.image,
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0",
+                                        "priceCurrency": "USD"
+                                    },
+                                    "sameAs": [project.links.live, project.links.github]
+                                },
+                                {
+                                    "@type": "BreadcrumbList",
+                                    "itemListElement": [
+                                        {
+                                            "@type": "ListItem",
+                                            "position": 1,
+                                            "name": "Home",
+                                            "item": "https://sifatmusfique.dev"
+                                        },
+                                        {
+                                            "@type": "ListItem",
+                                            "position": 2,
+                                            "name": "Projects",
+                                            "item": "https://sifatmusfique.dev/#portfolio"
+                                        },
+                                        {
+                                            "@type": "ListItem",
+                                            "position": 3,
+                                            "name": project.title,
+                                            "item": `https://sifatmusfique.dev/project/${project.id}`
+                                        }
+                                    ]
+                                }
+                            ]
+                        })
+                    }}
+                />
                 <div className="flex flex-col gap-4 mb-8">
                     <Link href="/" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors group w-fit">
                         <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />

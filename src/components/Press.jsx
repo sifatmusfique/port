@@ -26,7 +26,7 @@ const Press = () => {
                     title: "Sifat Musfique Announces FaaS Framework",
                     source: "OpenPR",
                     desc: "Sifat Musfique launches Formula-as-a-Service (FaaS) to solve scalable cloud-based API challenges.",
-                    link: "#", // Placeholder
+                    link: "https://www.openpr.com/news/4391159/rising-software-developer-sifat-musfique-redefines-scalable",
                     highlight: "Press Release"
                 }
             ]

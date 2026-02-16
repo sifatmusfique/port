@@ -4,9 +4,40 @@ import React from "react";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
+export const metadata = {
+    title: "Privacy Policy | Sifat Musfique",
+    description: "Privacy Policy and Terms for Sifat Musfique's official website.",
+    alternates: {
+        canonical: 'https://sifatmusfique.dev/privacy',
+    },
+};
+
 const PrivacyPolicy = () => {
     return (
         <main className="min-h-screen bg-[#030014] text-gray-200 py-20 px-6">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://sifatmusfique.dev"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Privacy Policy",
+                                "item": "https://sifatmusfique.dev/privacy"
+                            }
+                        ]
+                    })
+                }}
+            />
             <div className="max-w-4xl mx-auto">
                 <Link href="/" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors mb-12 group">
                     <FaArrowLeft className="group-hover:-translate-x-1 transition-transform" />

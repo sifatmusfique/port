@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Showcase from "@/components/Showcase";
+import Press from "@/components/Press";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
             <Hero />
             <About />
             <Showcase />
+            <Press />
             <Contact />
         </main>
     );
