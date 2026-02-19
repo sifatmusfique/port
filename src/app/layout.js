@@ -7,7 +7,7 @@ import AIAgent from "@/components/AIAgent";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], display: 'swap' });
 
 export const metadata = {
   metadataBase: new URL('https://sifatmusfique.dev'),

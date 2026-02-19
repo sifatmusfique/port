@@ -15,6 +15,10 @@ const nextConfig = {
         ];
     },
 
+    experimental: {
+        optimizeCss: true,
+        optimizePackageImports: ['react-icons', 'framer-motion', 'aos'],
+    },
 };
 
 export default nextConfig;

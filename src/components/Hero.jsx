@@ -3,17 +3,17 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaChessKnight, FaWikipediaW } from "react-icons/fa";
 
+const phrases = [
+    "Computer Science & Engg. Student",
+    "Tech Enthusiast",
+    "System Architect"
+];
+
 const Hero = () => {
-    const [text, setText] = React.useState("");
+    const [text, setText] = React.useState(phrases[0]);
     const [isDeleting, setIsDeleting] = React.useState(false);
     const [loopNum, setLoopNum] = React.useState(0);
     const [typingSpeed, setTypingSpeed] = React.useState(30);
-
-    const phrases = [
-        "Computer Science & Engg. Student",
-        "Tech Enthusiast",
-        "System Architect"
-    ];
 
     React.useEffect(() => {
         const i = loopNum % phrases.length;
