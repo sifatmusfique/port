@@ -117,6 +117,7 @@ const Hero = () => {
                                 href={social.href}
                                 rel={social.rel}
                                 target="_blank"
+                                aria-label={`Connect on ${social.href.split('://')[1].split('/')[0]}`} // Simple extraction for label
                                 className="w-12 h-12 flex items-center justify-center rounded-xl bg-white/5 border border-[#7042f8]/60 shadow-[0_0_15px_rgba(112,66,248,0.4)] hover:bg-white/10 hover:border-blue-500/60 hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] text-gray-400 hover:text-white transition-all hover:-translate-y-1"
                             >
                                 {social.icon}

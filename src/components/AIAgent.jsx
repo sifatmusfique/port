@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaRobot, FaTimes, FaPaperPlane } from "react-icons/fa";
 
@@ -137,9 +138,11 @@ const AIAgent = () => {
                     <FaTimes size={24} />
                 ) : (
                     <div className="h-full w-full rounded-full overflow-hidden p-0.5">
-                        <img
+                        <Image
                             src="/ai-avatar.png"
                             alt="AI"
+                            width={56}
+                            height={56}
                             className="h-full w-full object-cover rounded-full"
                         />
                     </div>
@@ -161,9 +164,11 @@ const AIAgent = () => {
                             <div className="flex items-center gap-3">
                                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 overflow-hidden relative">
                                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-violet-600/50 mix-blend-overlay z-10" />
-                                    <img
+                                    <Image
                                         src="/ai-avatar.png"
                                         alt="AI Avatar"
+                                        width={40}
+                                        height={40}
                                         className="h-full w-full object-cover"
                                     />
                                 </div>
