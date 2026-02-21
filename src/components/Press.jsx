@@ -41,6 +41,13 @@ const Press = () => {
                     desc: "Developed a distributed cloud API architecture that optimizes mathematical computation latency by 40%.",
                     link: "https://www.researchgate.net/profile/Sifat-Musfique",
                     highlight: "Research Paper"
+                },
+                {
+                    title: "Beyond Reactive Architectures: The Musfique Decision Loop (MDL)",
+                    source: "ResearchGate",
+                    desc: "Explores the emergence of Agentic FaaS systems through the Musfique Decision Loop, a novel architecture for intelligent, self-directed cloud functions.",
+                    link: "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems",
+                    highlight: "Research Paper"
                 }
             ]
         }
