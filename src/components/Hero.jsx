@@ -11,9 +11,9 @@ const phrases = [
 
 const Hero = () => {
     const [text, setText] = React.useState(phrases[0]);
-    const [isDeleting, setIsDeleting] = React.useState(false);
+    const [isDeleting, setIsDeleting] = React.useState(true); // Start by deleting to keep initial text visible longer
     const [loopNum, setLoopNum] = React.useState(0);
-    const [typingSpeed, setTypingSpeed] = React.useState(30);
+    const [typingSpeed, setTypingSpeed] = React.useState(1500); // Initial pause before deleting first text
 
     React.useEffect(() => {
         const i = loopNum % phrases.length;
@@ -25,20 +25,18 @@ const Hero = () => {
                 : fullText.substring(0, text.length + 1)
             );
 
-            setTypingSpeed(isDeleting ? 30 : 30);
+            // Faster typing, slower deleting
+            setTypingSpeed(isDeleting ? 30 : 50);
 
             if (!isDeleting && text === fullText) {
-                setTimeout(() => setIsDeleting(true), 1500); // Pause at end
+                setTimeout(() => setIsDeleting(true), 1500); // Pause at end of word
             } else if (isDeleting && text === "") {
                 setIsDeleting(false);
                 setLoopNum(loopNum + 1);
             }
         };
 
-        // Determine delay: 0 if starting new, otherwise standard speed
-        const timerSpeed = (text === "" && !isDeleting) ? 0 : typingSpeed;
-
-        const timer = setTimeout(handleType, timerSpeed);
+        const timer = setTimeout(handleType, typingSpeed);
         return () => clearTimeout(timer);
     }, [text, isDeleting, loopNum, phrases, typingSpeed]);
 
@@ -64,15 +62,15 @@ const Hero = () => {
                         </span>
                     </h1>
 
-                    <div className="md:text-xl text-gray-300 max-w-lg leading-relaxed">
-                        <span className="block text-white font-semibold mb-2 min-h-[1.5em] text-lg bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+                    <div className="md:text-xl text-gray-300 max-w-lg leading-relaxed w-full">
+                        <span className="block text-white font-semibold mb-2 h-[3em] sm:h-[1.5em] text-lg bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                             {text}
                             <span className="animate-pulse text-cyan-400">|</span>
                         </span>
-                        I architect scalable computational infrastructures and craft intuitive user experiences using modern technologies.
+                        <p className="block">I architect scalable computational infrastructures and craft intuitive user experiences using modern technologies.</p>
                     </div>
 
-                    <div className="flex flex-wrap gap-4 pt-2 mb-8">
+                    <div className="flex flex-wrap gap-4 pt-2 mb-8 w-full">
                         {["React", "Javascript", "Node.js", "PostgreSQL"].map((tech, index) => (
                             <span
                                 key={index}
@@ -83,7 +81,7 @@ const Hero = () => {
                         ))}
                     </div>
 
-                    <div className="flex flex-row gap-4 md:gap-6">
+                    <div className="flex flex-row gap-4 md:gap-6 w-full">
                         <a
                             href="#portfolio"
                             className="bg-white/5 backdrop-blur-md px-6 md:px-10 py-3 rounded-xl border border-blue-500/30 shadow-[0_0_20px_rgba(59,130,246,0.2)] hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(6,182,212,0.4)] transition-all group relative overflow-hidden flex-1 text-center justify-center"

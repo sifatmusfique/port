@@ -43,7 +43,7 @@ const Portfolio = () => {
                             data-aos-delay={index * 100}
                             className="relative overflow-hidden rounded-2xl shadow-lg border border-[#2A0E61] hover-gradient-glow glass-card group cursor-pointer"
                         >
-                            <div className="relative h-48 overflow-hidden">
+                            <div className="relative aspect-video overflow-hidden">
                                 <img
                                     src={project.image}
                                     alt={project.title}
