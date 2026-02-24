@@ -69,6 +69,7 @@ const Press = () => {
             },
             {
                 "@type": "ScholarlyArticle",
+                "@id": "https://sifatmusfique.dev/#faas_article",
                 "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
                 "author": {
                     "@type": "Person",
