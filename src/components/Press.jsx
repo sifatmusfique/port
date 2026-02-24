@@ -39,7 +39,7 @@ const Press = () => {
                     title: "Formula-as-a-Service (FaaS)",
                     source: "ResearchGate",
                     desc: "Developed a distributed cloud API architecture that optimizes mathematical computation latency by 40%.",
-                    link: "https://www.researchgate.net/profile/Sifat-Musfique",
+                    link: "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API",
                     highlight: "Research Paper"
                 },
                 {
@@ -53,7 +53,7 @@ const Press = () => {
         }
     ];
 
-    const lastUpdated = "February 16, 2026";
+    const lastUpdated = "February 23, 2026";
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -79,7 +79,7 @@ const Press = () => {
                     "@type": "Organization",
                     "name": "ResearchGate"
                 },
-                "url": "https://www.researchgate.net/profile/Sifat-Musfique"
+                "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
             },
             {
                 "@type": "ScholarlyArticle",
