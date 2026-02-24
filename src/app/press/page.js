@@ -9,6 +9,33 @@ export const metadata = {
     alternates: {
         canonical: 'https://sifatmusfique.dev/press',
     },
+    openGraph: {
+        title: "Press & Publications | Sifat Musfique",
+        description: "Media mentions, academic publications, and professional recognition for Sifat Musfique.",
+        url: 'https://sifatmusfique.dev/press',
+        siteName: 'Sifat Musfique Official Website',
+        locale: 'en_US',
+        type: 'website',
+    },
+    twitter: {
+        title: "Press & Publications | Sifat Musfique",
+        description: "Media mentions, academic publications, and professional recognition for Sifat Musfique.",
+        card: "summary_large_image",
+    },
+    icons: {
+        icon: '/brain/metad.png',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            'max-video-preview': -1,
+            'max-image-preview': 'large',
+            'max-snippet': -1,
+        },
+    },
 };
 
 const PressPage = () => {

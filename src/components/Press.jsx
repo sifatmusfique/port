@@ -75,6 +75,13 @@ const Press = () => {
                     "name": "Sifat Musfique"
                 },
                 "url": "https://www.researchgate.net/profile/Sifat-Musfique"
+            },
+            {
+                "@type": "ScholarlyArticle",
+                "@id": "https://sifatmusfique.dev/#mdl_article",
+                "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
+                "author": { "@id": "https://sifatmusfique.dev/#person" },
+                "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
             }
         ]
     };
