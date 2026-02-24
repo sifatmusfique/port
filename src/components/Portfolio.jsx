@@ -60,7 +60,7 @@ const Portfolio = () => {
                             </div>
 
                             <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2 text-white">{project.title}</h3>
+                                <h2 className="text-xl font-bold mb-2 text-white">{project.title}</h2>
                                 <p className="text-gray-400 mb-4 text-sm">{project.description}</p>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tech.map((t, i) => (

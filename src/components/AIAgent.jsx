@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, startTransition } from "react";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { FaRobot, FaTimes, FaPaperPlane } from "react-icons/fa";
@@ -129,10 +129,11 @@ const AIAgent = () => {
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 1 }}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => startTransition(() => setIsOpen(!isOpen))}
                 className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 focus:outline-none"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
+                aria-label={isOpen ? "Close AI Assistant" : "Open AI Assistant"}
             >
                 {isOpen ? (
                     <FaTimes size={24} />
@@ -157,12 +158,12 @@ const AIAgent = () => {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.9 }}
                         transition={{ duration: 0.3 }}
-                        className="fixed bottom-24 right-4 z-50 flex h-[500px] w-[350px] flex-col overflow-hidden rounded-2xl border border-white/10 bg-gray-900/90 shadow-2xl backdrop-blur-md sm:right-6"
+                        className="fixed bottom-24 right-4 z-50 flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gray-900/90 shadow-2xl backdrop-blur-md sm:right-6 w-[calc(100vw-2rem)] sm:w-[400px] h-[calc(100svh-8rem)] max-h-[600px] min-h-[400px]"
                     >
                         {/* Header */}
-                        <div className="flex items-center justify-between bg-gradient-to-r from-blue-600/20 to-violet-600/20 p-4 border-b border-white/5">
+                        <div className="flex items-center justify-between bg-gradient-to-r from-blue-600/20 to-violet-600/20 p-4 border-b border-white/5 shrink-0">
                             <div className="flex items-center gap-3">
-                                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 overflow-hidden relative">
+                                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-violet-600 overflow-hidden relative">
                                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/50 to-violet-600/50 mix-blend-overlay z-10" />
                                     <Image
                                         src="/ai-avatar.png"
@@ -170,6 +171,7 @@ const AIAgent = () => {
                                         width={40}
                                         height={40}
                                         className="h-full w-full object-cover"
+                                        priority
                                     />
                                 </div>
                                 <div>
@@ -182,56 +184,54 @@ const AIAgent = () => {
                             </div>
                             <button
                                 onClick={() => setIsOpen(false)}
-                                className="text-gray-400 hover:text-white transition-colors"
+                                className="text-gray-400 hover:text-white transition-colors p-2"
+                                aria-label="Close chat"
                             >
                                 <FaTimes />
                             </button>
                         </div>
 
                         {/* Messages Area */}
-                        <div className="flex-1 overflow-y-auto p-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-700">
-                            <div className="flex flex-col gap-4">
-                                {messages.map((msg) => (
+                        <div className="flex-1 overflow-y-auto p-4 space-y-4 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-700">
+                            {messages.map((msg) => (
+                                <div
+                                    key={msg.id}
+                                    className={`flex w-full ${msg.sender === "user" ? "justify-end" : "justify-start"}`}
+                                >
                                     <div
-                                        key={msg.id}
-                                        className={`flex ${msg.sender === "user" ? "justify-end" : "justify-start"
+                                        className={`max-w-[85%] rounded-2xl px-4 py-3 text-sm flex-shrink-0 ${msg.sender === "user"
+                                            ? "bg-blue-600 text-white rounded-br-sm"
+                                            : "bg-gray-800 text-gray-100 rounded-bl-sm border border-white/5"
                                             }`}
                                     >
-                                        <div
-                                            className={`max-w-[80%] rounded-2xl px-4 py-3 text-sm ${msg.sender === "user"
-                                                ? "bg-blue-600 text-white rounded-br-none"
-                                                : "bg-gray-800 text-gray-100 rounded-bl-none border border-white/5"
-                                                }`}
-                                        >
-                                            {msg.text}
+                                        {msg.text}
+                                    </div>
+                                </div>
+                            ))}
+                            {isTyping && (
+                                <div className="flex justify-start w-full">
+                                    <div className="bg-gray-800 rounded-2xl rounded-bl-sm px-4 py-3 border border-white/5">
+                                        <div className="flex gap-1.5 items-center h-5">
+                                            <span className="h-1.5 w-1.5 rounded-full bg-gray-400 animate-bounce"></span>
+                                            <span className="h-1.5 w-1.5 rounded-full bg-gray-400 animate-bounce delay-100"></span>
+                                            <span className="h-1.5 w-1.5 rounded-full bg-gray-400 animate-bounce delay-200"></span>
                                         </div>
                                     </div>
-                                ))}
-                                {isTyping && (
-                                    <div className="flex justify-start">
-                                        <div className="bg-gray-800 rounded-2xl rounded-bl-none px-4 py-3 border border-white/5">
-                                            <div className="flex gap-1">
-                                                <span className="h-2 w-2 rounded-full bg-gray-400 animate-bounce"></span>
-                                                <span className="h-2 w-2 rounded-full bg-gray-400 animate-bounce delay-100"></span>
-                                                <span className="h-2 w-2 rounded-full bg-gray-400 animate-bounce delay-200"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                )}
-                                <div ref={messagesEndRef} />
-                            </div>
+                                </div>
+                            )}
+                            <div ref={messagesEndRef} className="h-1" />
                         </div>
 
                         {/* Suggestions */}
                         {messages.length < 2 && !isTyping && (
-                            <div className="px-4 pb-2">
-                                <p className="mb-2 text-xs text-gray-500 font-medium">Suggestions:</p>
+                            <div className="px-4 pb-3 shrink-0">
+                                <p className="mb-2 text-xs text-gray-400 font-medium">Suggestions:</p>
                                 <div className="flex flex-wrap gap-2">
                                     {suggestions.map((s, i) => (
                                         <button
                                             key={i}
                                             onClick={() => handleSendMessage(s)}
-                                            className="rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs text-blue-300 hover:bg-blue-500/20 transition-colors"
+                                            className="rounded-full border border-blue-500/30 bg-blue-500/10 px-3 py-1 text-xs text-blue-300 hover:bg-blue-500/20 transition-colors text-left"
                                         >
                                             {s}
                                         </button>
@@ -241,7 +241,7 @@ const AIAgent = () => {
                         )}
 
                         {/* Input Area */}
-                        <div className="border-t border-white/10 p-4 bg-gray-900">
+                        <div className="border-t border-white/10 p-4 bg-gray-900 shrink-0">
                             <div className="flex items-center gap-2 rounded-full bg-gray-800 px-4 py-2 border border-white/5 focus-within:border-blue-500/50 transition-colors">
                                 <input
                                     type="text"
@@ -249,12 +249,13 @@ const AIAgent = () => {
                                     onChange={(e) => setInputValue(e.target.value)}
                                     onKeyPress={handleKeyPress}
                                     placeholder="Ask about Sifat..."
-                                    className="flex-1 bg-transparent text-sm text-white placeholder-gray-500 focus:outline-none"
+                                    className="flex-1 bg-transparent text-sm text-white placeholder-gray-500 focus:outline-none w-full"
                                 />
                                 <button
                                     onClick={() => handleSendMessage(inputValue)}
                                     disabled={!inputValue.trim()}
-                                    className="text-blue-500 hover:text-blue-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                    className="text-blue-500 hover:text-blue-400 disabled:opacity-50 disabled:cursor-not-allowed transition-colors p-1"
+                                    aria-label="Send message"
                                 >
                                     <FaPaperPlane />
                                 </button>

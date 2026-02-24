@@ -13,7 +13,7 @@ const Hero = () => {
     const [text, setText] = React.useState(phrases[0]);
     const [isDeleting, setIsDeleting] = React.useState(true); // Start by deleting to keep initial text visible longer
     const [loopNum, setLoopNum] = React.useState(0);
-    const [typingSpeed, setTypingSpeed] = React.useState(1500); // Initial pause before deleting first text
+    const [typingSpeed, setTypingSpeed] = React.useState(3000); // Extended initial pause
 
     React.useEffect(() => {
         const i = loopNum % phrases.length;
@@ -63,10 +63,12 @@ const Hero = () => {
                     </h1>
 
                     <div className="md:text-xl text-gray-300 max-w-lg leading-relaxed w-full">
-                        <span className="block text-white font-semibold mb-2 h-[3em] sm:h-[1.5em] text-lg bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-                            {text}
-                            <span className="animate-pulse text-cyan-400">|</span>
-                        </span>
+                        <div className="h-[3em] sm:h-[1.5em] mb-2 w-full">
+                            <span className="text-white font-semibold text-lg bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent inline-block">
+                                {text}
+                            </span>
+                            <span className="animate-pulse text-cyan-400 text-lg ml-[2px] font-bold">|</span>
+                        </div>
                         <p className="block">I architect scalable computational infrastructures and craft intuitive user experiences using modern technologies.</p>
                     </div>
 
