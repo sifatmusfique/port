@@ -59,15 +59,6 @@ const Press = () => {
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "Person",
-                "name": "Sifat Musfique",
-                "url": "https://sifatmusfique.dev",
-                "sameAs": [
-                    "https://www.crunchbase.com/person/sifat-musfique",
-                    "https://www.researchgate.net/profile/Sifat-Musfique"
-                ]
-            },
-            {
                 "@type": "ScholarlyArticle",
                 "@id": "https://sifatmusfique.dev/#faas_article",
                 "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
