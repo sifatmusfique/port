@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
         "url": "https://sifatmusfique.dev/",
         "mainEntityOfPage": "https://sifatmusfique.dev",
         "name": "Sifat Musfique",
-        "jobTitle": "Software Developer",
+        "jobTitle": ["Software Developer", "Research Scientist"],
         "description": "Sifat Musfique is a software developer and researcher based in Bangladesh. He is a Computer Science and Engineering (CSE) student at Varendra University focusing on web infrastructure and AI-driven technologies.",
         "nationality": "Bangladeshi",
         "image": [
@@ -74,6 +74,13 @@ export default function RootLayout({ children }) {
           "@type": "Place",
           "name": "Naogaon, Bangladesh"
         },
+        "gender": "Male",
+        "height": {
+          "@type": "QuantitativeValue",
+          "value": "182",
+          "unitCode": "CMT"
+        },
+        "knowsLanguage": ["Bengali", "English"],
         "affiliation": {
           "@type": "EducationalOrganization",
           "name": "Varendra University",
@@ -87,6 +94,10 @@ export default function RootLayout({ children }) {
           {
             "@type": "Organization",
             "name": "FIDE - International Chess Federation"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Varendra University Computer Club"
           }
         ],
         "brand": {
@@ -111,28 +122,49 @@ export default function RootLayout({ children }) {
           "telephone": "+8801560009992",
           "contactType": "customer service"
         },
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "BSc in Computer Science and Engineering (Candidate)",
+            "recognizedBy": {
+              "@type": "EducationalOrganization",
+              "name": "Varendra University"
+            }
+          }
+        ],
         "sameAs": [
           "https://www.google.com/search?kgmid=/g/11yzdbf2km",
-          "https://www.wikidata.org/wiki/Q138035556",
+          "https://orcid.org/0009-0009-6985-3080",
+          "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=LsO3KMsAAAAJ",
           "https://www.crunchbase.com/person/sifat-musfique",
           "https://www.imdb.com/name/nm18221523/",
           "https://ratings.fide.com/profile/315105339",
           "https://www.researchgate.net/profile/Sifat-Musfique",
           "https://hackernoon.com/u/sifatmusfique",
           "https://medium.com/@sifatmusfique",
-          "https://forem.com/sifatmusfique",
+          "https://www.forem.com/sifatmusfique",
           "https://www.linkedin.com/in/sifatmusfique-dev",
           "https://dev.to/sifatmusfique",
-          "https://forem.com/sifatmusfique",
           "https://hashnode.com/@sifatmusfique",
           "https://stackoverflow.com/users/32314667/sifat-musfique",
-          "https://www.fiverr.com/sifatmusfique",
           "https://about.me/sifatmusfique",
           "https://www.facebook.com/sifatmusfique",
           "https://www.instagram.com/sifat.musfique",
-          "https://wikialpha.co/wiki/Sifat_Musfique",
-          "https://www.skool.com/@sifat-musfique-8682"
         ]
+      },
+      {
+        "@type": "CreativeWork",
+        "author": { "@id": "https://sifatmusfique.dev/#person" },
+        "headline": "Formula-as-a-Service (FaaS) Optimization Patterns",
+        "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
+        "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
+      },
+      {
+        "@type": "CreativeWork",
+        "author": { "@id": "https://sifatmusfique.dev/#person" },
+        "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL)",
+        "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
+        "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
       }
     ]
   };
