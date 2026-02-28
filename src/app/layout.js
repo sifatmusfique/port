@@ -70,6 +70,8 @@ export default function RootLayout({ children }) {
           "https://sifatmusfique.dev/photos/Sifat_Musfique_stand.jpg"
         ],
         "birthDate": "2005-06-12",
+        "gender": "Male",
+        "height": "182 cm",
         "birthPlace": {
           "@type": "Place",
           "name": "Naogaon, Bangladesh"
@@ -138,15 +140,10 @@ export default function RootLayout({ children }) {
           "https://forem.com/sifatmusfique",
           "https://www.linkedin.com/in/sifatmusfique-dev",
           "https://dev.to/sifatmusfique",
-          "https://forem.com/sifatmusfique",
           "https://hashnode.com/@sifatmusfique",
           "https://stackoverflow.com/users/32314667/sifat-musfique",
-          "https://www.fiverr.com/sifatmusfique",
           "https://about.me/sifatmusfique",
-          "https://www.facebook.com/sifatmusfique",
           "https://www.instagram.com/sifat.musfique",
-          "https://wikialpha.co/wiki/Sifat_Musfique",
-          "https://www.skool.com/@sifat-musfique-8682"
         ]
       }
     ]
