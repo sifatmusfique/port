@@ -147,21 +147,25 @@ export default function RootLayout({ children }) {
           "https://www.instagram.com/sifat.musfique",
           "https://wikialpha.co/wiki/Sifat_Musfique",
           "https://www.skool.com/@sifat-musfique-8682"
-        ],
-        "Works": [
-          {
-            "@type": "CreativeWork",
-            "name": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
-            "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
-            "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
-          },
-          {
-            "@type": "CreativeWork",
-            "name": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
-            "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
-            "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
-          }
         ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
+        "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
+        "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API",
+        "author": {
+          "@id": "https://sifatmusfique.dev/#person"
+        }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "name": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
+        "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
+        "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems",
+        "author": {
+          "@id": "https://sifatmusfique.dev/#person"
+        }
       }
     ]
   };
