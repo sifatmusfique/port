@@ -55,48 +55,8 @@ const Press = () => {
 
     const lastUpdated = "February 23, 2026";
 
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "ScholarlyArticle",
-                "@id": "https://sifatmusfique.dev/#faas_article",
-                "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sifat Musfique"
-                },
-                "datePublished": "2026-02-16",
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "ResearchGate"
-                },
-                "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
-            },
-            {
-                "@type": "ScholarlyArticle",
-                "@id": "https://sifatmusfique.dev/#mdl_article",
-                "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sifat Musfique"
-                },
-                "datePublished": "2026-02-21",
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "ResearchGate"
-                },
-                "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
-            }
-        ]
-    };
-
     return (
         <section id="press" className="py-20 relative z-10">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
             <div className="max-w-7xl mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center mb-16" data-aos="fade-up">
                     Press & <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">Publications</span>
