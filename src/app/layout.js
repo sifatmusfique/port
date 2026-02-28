@@ -147,44 +147,43 @@ export default function RootLayout({ children }) {
       "https://stackoverflow.com/users/32314667/sifat-musfique",
       "https://about.me/sifatmusfique",
       "https://www.facebook.com/sifatmusfique",
-      "https://www.instagram.com/sifat.musfique",
-    ]
-  },
-  "@reverse": {
-    "author": [
-      {
-        "@type": "CreativeWork",
-        "headline": "Formula-as-a-Service (FaaS) Optimization Patterns",
-        "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
-        "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
-      },
-      {
-        "@type": "CreativeWork",
-        "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL)",
-        "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
-        "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
-      }
-    ]
-  }
-};
+      "https://www.instagram.com/sifat.musfique"
+    ],
+    "@reverse": {
+      "author": [
+        {
+          "@type": "CreativeWork",
+          "headline": "Formula-as-a-Service (FaaS) Optimization Patterns",
+          "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
+          "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
+        },
+        {
+          "@type": "CreativeWork",
+          "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL)",
+          "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
+          "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
+        }
+      ]
+    }
+  };
 
-return (
-  <html lang="en" className="dark overflow-x-hidden">
-    <head>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-    </head>
-    <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden text-gray-200`}>
-      <SmoothScroll />
-      <BackgroundCanvas />
-      <Navbar />
-      <AosInit />
-      <AIAgent />
-      {children}
-      <Footer />
-    </body>
-  </html>
-);
+  return (
+    <html lang="en" className="dark overflow-x-hidden">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
+      <body className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden text-gray-200`}>
+        <SmoothScroll />
+        <BackgroundCanvas />
+        <Navbar />
+        <AosInit />
+        <AIAgent />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
