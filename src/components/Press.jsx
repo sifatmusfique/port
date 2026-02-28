@@ -62,11 +62,13 @@ const Press = () => {
                 "@type": "ScholarlyArticle",
                 "@id": "https://sifatmusfique.dev/#faas_article",
                 "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
+                "image": "https://sifatmusfique.dev/photos/faas_article.png",
                 "author": {
                     "@type": "Person",
-                    "name": "Sifat Musfique"
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
                 },
-                "datePublished": "2026-02-16",
+                "datePublished": "2026-02-16T00:00:00+06:00",
                 "publisher": {
                     "@type": "Organization",
                     "name": "ResearchGate"
@@ -78,11 +80,13 @@ const Press = () => {
                 "@type": "ScholarlyArticle",
                 "@id": "https://sifatmusfique.dev/#mdl_article",
                 "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
+                "image": "https://sifatmusfique.dev/photos/mdl_article.png",
                 "author": {
                     "@type": "Person",
-                    "name": "Sifat Musfique"
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
                 },
-                "datePublished": "2026-02-21",
+                "datePublished": "2026-02-21T00:00:00+06:00",
                 "publisher": {
                     "@type": "Organization",
                     "name": "ResearchGate"

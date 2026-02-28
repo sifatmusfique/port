@@ -129,6 +129,8 @@ export default function RootLayout({ children }) {
         ],
         "sameAs": [
           "https://www.google.com/search?kgmid=/g/11yzdbf2km",
+          "https://www.google.com/search?kgmid=/g/11w3v3jgvx",
+          "https://www.google.com/search?kgmid=/g/11xzgftxps",
           "https://orcid.org/0009-0009-6985-3080",
           "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=LsO3KMsAAAAJ",
           "https://www.crunchbase.com/person/sifat-musfique",
