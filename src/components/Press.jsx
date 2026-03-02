@@ -48,6 +48,13 @@ const Press = () => {
                     desc: "Explores the emergence of Agentic FaaS systems through the Musfique Decision Loop, a novel architecture for intelligent, self-directed cloud functions.",
                     link: "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems",
                     highlight: "Research Paper"
+                },
+                {
+                    title: "Agentic FaaS Benchmarks & Methodology",
+                    source: "Technical Appendix",
+                    desc: "Performance metrics comparing Standard REST API with Agentic FaaS Orchestration, demonstrating a 30% latency reduction.",
+                    link: "/research/faas-benchmarks",
+                    highlight: "Benchmarks"
                 }
             ]
         }

@@ -127,6 +127,11 @@ export default function RootLayout({ children }) {
             }
           }
         ],
+        "subjectOf": {
+          "@type": "WebPage",
+          "url": "https://sifatmusfique.dev/research/faas-benchmarks",
+          "name": "Technical Appendix: Performance Metrics for Agentic FaaS Orchestration"
+        },
         "sameAs": [
           "https://www.google.com/search?kgmid=/g/11yzdbf2km",
           "https://www.google.com/search?kgmid=/g/11w3v3jgvx",
