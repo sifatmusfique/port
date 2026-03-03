@@ -50,6 +50,13 @@ const Press = () => {
                     highlight: "Research Paper"
                 },
                 {
+                    title: "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
+                    source: "ResearchGate",
+                    desc: "Introduces the Musfique Decision Loop (MDL) as a state-action framework to optimize autonomous Agentic Orchestration in diagnostic medical imaging.",
+                    link: "https://www.researchgate.net/publication/401495210_Agentic_Orchestration_in_Diagnostic_Medical_Imaging_A_Musfique_Decision_Loop_Approach",
+                    highlight: "Research Paper"
+                },
+                {
                     title: "Agentic FaaS Benchmarks & Methodology",
                     source: "Technical Appendix",
                     desc: "Performance metrics comparing Standard REST API with Agentic FaaS Orchestration, demonstrating a 30% latency reduction.",
@@ -100,6 +107,24 @@ const Press = () => {
                 },
                 "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
                 "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
+            },
+            {
+                "@type": "ScholarlyArticle",
+                "@id": "https://sifatmusfique.dev/#diagnostic_imaging_mdl_article",
+                "headline": "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
+                "image": "https://sifatmusfique.dev/photos/diag_imaging_mdl.png",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
+                },
+                "datePublished": "2026-03-03T00:00:00+06:00",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "ResearchGate"
+                },
+                "sameAs": "https://doi.org/10.13140/RG.2.2.21683.28961",
+                "url": "https://www.researchgate.net/publication/401495210_Agentic_Orchestration_in_Diagnostic_Medical_Imaging_A_Musfique_Decision_Loop_Approach"
             }
         ]
     };
