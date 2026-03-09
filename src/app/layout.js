@@ -81,10 +81,20 @@ export default function RootLayout({ children }) {
           "name": "Varendra University",
           "url": "https://vu.edu.bd/"
         },
-        "alumniOf": {
-          "@type": "EducationalOrganization",
-          "name": "Varendra University"
-        },
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Varendra University"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "R.B govt high school, Joypurhat"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Joypurhat govt college"
+          }
+        ],
         "memberOf": [
           {
             "@type": "Organization",
@@ -124,6 +134,22 @@ export default function RootLayout({ children }) {
             "recognizedBy": {
               "@type": "EducationalOrganization",
               "name": "Varendra University"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Secondary School Certificate",
+            "recognizedBy": {
+              "@type": "EducationalOrganization",
+              "name": "R.B govt high school, Joypurhat"
+            }
+          },
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "Higher Secondary Certificate",
+            "recognizedBy": {
+              "@type": "EducationalOrganization",
+              "name": "Joypurhat govt college"
             }
           }
         ],
