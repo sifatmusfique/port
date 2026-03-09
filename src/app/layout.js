@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
         ],
         "birthDate": "2005-06-12",
         "gender": "Male",
-        "height": "182 cm",
+        "height": "183 cm",
         "birthPlace": {
           "@type": "Place",
           "name": "Naogaon, Bangladesh"
