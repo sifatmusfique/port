@@ -111,12 +111,12 @@ export default function RootLayout({ children }) {
           "alternateName": "TensorTide Education"
         },
         "knowsAbout": [
-          "React", 
-          "PHP", 
-          "Python", 
-          "Web Development", 
-          "AI Orchestration", 
-          "Chess Strategy", 
+          "React",
+          "PHP",
+          "Python",
+          "Web Development",
+          "AI Orchestration",
+          "Chess Strategy",
           "AI-driven technologies",
           {
             "@type": "Person",

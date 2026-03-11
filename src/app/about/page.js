@@ -65,20 +65,44 @@ export default function AboutPage() {
 
                                     <div className="space-y-3 text-sm">
                                         <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Full Name</span>
+                                            <span className="w-2/3 text-gray-200">Sifat Musfique</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
                                             <span className="w-1/3 text-gray-400">Born</span>
                                             <span className="w-2/3 text-gray-200">12 June 2005 <br />Naogaon, Bangladesh</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Hometown</span>
+                                            <span className="w-2/3 text-gray-200">Naogaon, Bangladesh</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Current Residence</span>
+                                            <span className="w-2/3 text-gray-200">Rajshahi, Bangladesh</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Nationality</span>
+                                            <span className="w-2/3 text-gray-200">Bangladeshi</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Religion</span>
+                                            <span className="w-2/3 text-gray-200">Islam</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Height</span>
+                                            <span className="w-2/3 text-gray-200">183 cm</span>
+                                        </div>
+                                        <div className="flex border-b border-white/5 pb-2">
+                                            <span className="w-1/3 text-gray-400">Weight</span>
+                                            <span className="w-2/3 text-gray-200">56 kg</span>
+                                        </div>
+                                        <div className="flex pb-2">
                                             <span className="w-1/3 text-gray-400">Education</span>
                                             <span className="w-2/3 text-gray-200">
                                                 Varendra University <span className="text-xs text-gray-400">(B.Sc in C.S.E)</span><br />
                                                 Joypurhat Govt College <span className="text-xs text-gray-400">(H.S.C)</span><br />
                                                 R.B Govt High School <span className="text-xs text-gray-400">(S.S.C)</span>
                                             </span>
-                                        </div>
-                                        <div className="flex pb-2">
-                                            <span className="w-1/3 text-gray-400">Nationality</span>
-                                            <span className="w-2/3 text-gray-200">Bangladeshi</span>
                                         </div>
                                     </div>
                                 </div>
