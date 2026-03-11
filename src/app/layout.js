@@ -212,6 +212,7 @@ export default function RootLayout({ children }) {
           "https://ratings.fide.com/profile/315105339",
           "https://www.researchgate.net/profile/Sifat-Musfique",
           "https://en.wikipedia.org/wiki/User:MarioDavid-lp/sandbox",
+          "https://www.webofscience.com/wos/author/record/PNI-3967-2026",
           "https://wikialpha.co/wiki/Sifat_Musfique",
           "https://www.behance.net/sifatmusfique",
           "https://golden.com/profile/sifat-musfique",
