@@ -110,7 +110,50 @@ export default function RootLayout({ children }) {
           "name": "TensorTide",
           "alternateName": "TensorTide Education"
         },
-        "knowsAbout": ["React", "PHP", "Python", "Web Development", "AI Orchestration", "Chess Strategy", "AI-driven technologies"],
+        "knowsAbout": [
+          "React", 
+          "PHP", 
+          "Python", 
+          "Web Development", 
+          "AI Orchestration", 
+          "Chess Strategy", 
+          "AI-driven technologies",
+          {
+            "@type": "Person",
+            "name": "Andrew Ng",
+            "jobTitle": "Computer Scientist"
+          },
+          {
+            "@type": "Person",
+            "name": "Yann LeCun",
+            "jobTitle": "Computer Scientist"
+          },
+          {
+            "@type": "Person",
+            "name": "Geoffrey Hinton",
+            "jobTitle": "Computer Scientist"
+          },
+          {
+            "@type": "Person",
+            "name": "Demis Hassabis",
+            "jobTitle": "AI Researcher"
+          },
+          {
+            "@type": "Person",
+            "name": "Linus Torvalds",
+            "jobTitle": "Software Engineer"
+          },
+          {
+            "@type": "Person",
+            "name": "Guillermo Rauch",
+            "jobTitle": "Software Developer"
+          },
+          {
+            "@type": "Person",
+            "name": "Rasmus Lerdorf",
+            "jobTitle": "Programmer"
+          }
+        ],
         "homeLocation": {
           "@type": "Place",
           "name": "Rajshahi, Bangladesh"
