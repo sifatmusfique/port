@@ -211,6 +211,7 @@ export default function RootLayout({ children }) {
           "https://www.imdb.com/name/nm18221523/",
           "https://ratings.fide.com/profile/315105339",
           "https://www.researchgate.net/profile/Sifat-Musfique",
+          "https://en.wikipedia.org/wiki/User:MarioDavid-lp/sandbox",
           "https://wikialpha.co/wiki/Sifat_Musfique",
           "https://www.behance.net/sifatmusfique",
           "https://golden.com/profile/sifat-musfique",
