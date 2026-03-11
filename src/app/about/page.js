@@ -65,39 +65,39 @@ export default function AboutPage() {
 
                                     <div className="space-y-3 text-sm">
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Full Name</span>
+                                            <span className="w-1/3 text-gray-400">Full Name:</span>
                                             <span className="w-2/3 text-gray-200">Sifat Musfique</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Born</span>
+                                            <span className="w-1/3 text-gray-400">Born:</span>
                                             <span className="w-2/3 text-gray-200">12 June 2005 <br />Naogaon, Bangladesh</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Hometown</span>
+                                            <span className="w-1/3 text-gray-400">Hometown:</span>
                                             <span className="w-2/3 text-gray-200">Naogaon, Bangladesh</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Current Residence</span>
+                                            <span className="w-1/3 text-gray-400">Current Residence:</span>
                                             <span className="w-2/3 text-gray-200">Rajshahi, Bangladesh</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Nationality</span>
+                                            <span className="w-1/3 text-gray-400">Nationality:</span>
                                             <span className="w-2/3 text-gray-200">Bangladeshi</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Religion</span>
+                                            <span className="w-1/3 text-gray-400">Religion:</span>
                                             <span className="w-2/3 text-gray-200">Islam</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Height</span>
+                                            <span className="w-1/3 text-gray-400">Height:</span>
                                             <span className="w-2/3 text-gray-200">183 cm</span>
                                         </div>
                                         <div className="flex border-b border-white/5 pb-2">
-                                            <span className="w-1/3 text-gray-400">Weight</span>
+                                            <span className="w-1/3 text-gray-400">Weight:</span>
                                             <span className="w-2/3 text-gray-200">56 kg</span>
                                         </div>
                                         <div className="flex pb-2">
-                                            <span className="w-1/3 text-gray-400">Education</span>
+                                            <span className="w-1/3 text-gray-400">Education:</span>
                                             <span className="w-2/3 text-gray-200">
                                                 Varendra University <span className="text-xs text-gray-400">(B.Sc in C.S.E)</span><br />
                                                 Joypurhat Govt College <span className="text-xs text-gray-400">(H.S.C)</span><br />
@@ -112,7 +112,7 @@ export default function AboutPage() {
                             <div className="p-6 rounded-2xl glass-liquid border border-white/5 bg-white/5 shadow-lg">
                                 <h3 className="text-lg font-bold mb-3 text-white border-b border-white/10 pb-2">Overview</h3>
                                 <p className="text-gray-300 text-sm leading-relaxed">
-                                    Sifat Musfique is a software developer and researcher known for his work in computational biology, AI-driven technologies, and the Musfique Decision Loop (MDL). He specializes in scalable web infrastructure and scientific computing.
+                                    Sifat Musfique is a software developer and researcher based in Bangladesh. He is currently a student of Computer Science and Engineering at Varendra University in Rajshahi. Sifat specializes in scientific computing, cloud architecture, and the development of AI-driven technologies.
                                 </p>
                             </div>
 
@@ -121,11 +121,11 @@ export default function AboutPage() {
                                 <h3 className="text-lg font-bold mb-3 text-white border-b border-white/10 pb-2">Quick Facts</h3>
                                 <ul className="space-y-2 text-sm">
                                     <li className="flex justify-between">
-                                        <span className="text-gray-400">Notable Work</span>
+                                        <span className="text-gray-400">Notable Work:</span>
                                         <span className="text-gray-200 text-right">MDL Framework,<br /> FaaS</span>
                                     </li>
                                     <li className="flex justify-between">
-                                        <span className="text-gray-400">FIDE Rating</span>
+                                        <span className="text-gray-400">FIDE Rating:</span>
                                         <span className="text-cyan-400"><a href="https://ratings.fide.com/profile/315105339" target="_blank" rel="noopener noreferrer">315105339</a></span>
                                     </li>
                                 </ul>
