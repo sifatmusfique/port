@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
-import { FaAward, FaNewspaper, FaUniversity, FaExternalLinkAlt } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaAward, FaNewspaper, FaUniversity, FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 const Press = () => {
+    const [isArticleExpanded, setIsArticleExpanded] = useState(false);
+
     const pressItems = [
         {
             category: "Professional Recognition",
@@ -183,6 +185,47 @@ const Press = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                {/* Expandable Featured Article */}
+                <div className="mt-16 glass-liquid rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-all duration-300 shadow-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div 
+                        className="flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer group gap-4"
+                        onClick={() => setIsArticleExpanded(!isArticleExpanded)}
+                    >
+                        <div>
+                            <span className="text-xs font-bold px-2 py-1 rounded-md bg-white/10 text-cyan-300 border border-white/5 mb-3 inline-block">Featured News</span>
+                            <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                Musfique Decision Loop Cuts Medical Imaging Latency by 30%
+                            </h3>
+                            <p className="text-gray-400 mt-1">Source: ThatNewAI</p>
+                        </div>
+                        <div className="p-3 bg-white/5 border border-white/10 rounded-full text-cyan-400 group-hover:bg-white/10 group-hover:scale-110 transition-all">
+                            {isArticleExpanded ? <FaChevronUp className="text-lg" /> : <FaChevronDown className="text-lg" />}
+                        </div>
+                    </div>
+                    
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isArticleExpanded ? 'max-h-[1000px] mt-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className="h-px bg-white/10 w-full mb-6"></div>
+                        <div className="text-gray-300 space-y-4 leading-relaxed">
+                            <p>
+                                A recent feature explores how the <strong>Musfique Decision Loop (MDL)</strong> is being applied to diagnostic medical imaging, introducing a novel state-action framework designed to optimize autonomous agentic orchestration. The architecture demonstrates significant improvements in processing distributed, high-resolution MRI and CT imaging data.
+                            </p>
+                            <p>
+                                By replacing traditional reactive data flows with intelligent, self-directed cloud functions, the MDL framework achieves up to a <strong>30% reduction in processing latency</strong>. This presents a major leap forward for high-throughput biomedical data streams where time-to-diagnosis is critical.
+                            </p>
+                            <div className="pt-4">
+                                <a 
+                                    href="https://thatnewai.com/news/musfique-decision-loop-cuts-medical-imaging-latency-by-30" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20 hover:text-cyan-300 transition-all border border-cyan-500/20 font-medium"
+                                >
+                                    Read full article on ThatNewAI <FaExternalLinkAlt className="text-xs" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
