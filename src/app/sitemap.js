@@ -9,6 +9,9 @@ export default function sitemap() {
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.8,
+        images: [
+            `${baseUrl}${project.image}`
+        ]
     }));
 
     // Define static routes
@@ -56,6 +59,19 @@ export default function sitemap() {
         },
         {
             url: `${baseUrl}/press`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+            images: [
+                'https://sifatmusfique.dev/photos/faas_article.png',
+                'https://sifatmusfique.dev/photos/mdl_article.png',
+                'https://sifatmusfique.dev/photos/diag_imaging_mdl.png',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique.png',
+                'https://sifatmusfique.dev/photos/Sifat_Musfique_coding.jpg',
+            ],
+        },
+        {
+            url: `${baseUrl}/research/faas-benchmarks`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,
