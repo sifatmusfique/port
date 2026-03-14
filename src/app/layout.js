@@ -196,11 +196,28 @@ export default function RootLayout({ children }) {
             }
           }
         ],
-        "subjectOf": {
-          "@type": "WebPage",
-          "url": "https://sifatmusfique.dev/research/faas-benchmarks",
-          "name": "Technical Appendix: Performance Metrics for Agentic FaaS Orchestration"
-        },
+        "subjectOf": [
+          {
+            "@type": "WebPage",
+            "url": "https://sifatmusfique.dev/research/faas-benchmarks",
+            "name": "Technical Appendix: Performance Metrics for Agentic FaaS Orchestration"
+          },
+          {
+             "@type": "Article",
+             "url": "https://iwantmyopenid.org/rising-software-developer-sifat-musfique-redefines-scalable.html?amp=1",
+             "name": "Rising Software Developer Sifat Musfique Redefines Scalable"
+          },
+          {
+             "@type": "Article",
+             "url": "https://www.sysdesai.com/news/YfdYO9e1oyuF",
+             "name": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop"
+          },
+          {
+             "@type": "Article",
+             "url": "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
+             "name": "Building a Production-Grade AI Agent from Scratch in 2026: A Principles-First Guide"
+          }
+        ],
         "sameAs": [
           "https://www.google.com/search?kgmid=/g/11yzdbf2km",
           "https://www.google.com/search?kgmid=/g/11w3v3jgvx",

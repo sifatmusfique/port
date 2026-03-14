@@ -5,6 +5,7 @@ import { FaAward, FaNewspaper, FaUniversity, FaExternalLinkAlt, FaChevronDown, F
 
 const Press = () => {
     const [isArticleExpanded, setIsArticleExpanded] = useState(false);
+    const [isAiGuideExpanded, setIsAiGuideExpanded] = useState(false);
 
     const pressItems = [
         {
@@ -30,6 +31,20 @@ const Press = () => {
                     desc: "Sifat Musfique launches Formula-as-a-Service (FaaS) to solve scalable cloud-based API challenges.",
                     link: "https://www.openpr.com/news/4391159/rising-software-developer-sifat-musfique-redefines-scalable",
                     highlight: "Press Release"
+                },
+                {
+                    title: "Rising Software Developer Sifat Musfique Redefines Scalable",
+                    source: "Information Technology",
+                    desc: "Sifat Musfique announces a new framework for cloud-based API computational efficiency.",
+                    link: "https://iwantmyopenid.org/rising-software-developer-sifat-musfique-redefines-scalable.html?amp=1",
+                    highlight: "News"
+                },
+                {
+                    title: "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop",
+                    source: "Sysdesai News",
+                    desc: "An overview of Formula-as-a-Service (FaaS) and the Musfique Decision Loop (MDL), aiming at evolving serverless environments.",
+                    link: "https://www.sysdesai.com/news/YfdYO9e1oyuF",
+                    highlight: "Tech News"
                 }
             ]
         },
@@ -64,6 +79,13 @@ const Press = () => {
                     desc: "Performance metrics comparing Standard REST API with Agentic FaaS Orchestration, demonstrating a 30% latency reduction.",
                     link: "/research/faas-benchmarks",
                     highlight: "Benchmarks"
+                },
+                {
+                    title: "Building a Production-Grade AI Agent from Scratch in 2026",
+                    source: "Towards AI",
+                    desc: "A principles-first guide on creating an advanced AI agent from scratch with Python, emphasizing efficiency and robustness.",
+                    link: "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
+                    highlight: "Technical Guide"
                 }
             ]
         }
@@ -127,6 +149,36 @@ const Press = () => {
                 },
                 "sameAs": "https://doi.org/10.13140/RG.2.2.21683.28961",
                 "url": "https://www.researchgate.net/publication/401495210_Agentic_Orchestration_in_Diagnostic_Medical_Imaging_A_Musfique_Decision_Loop_Approach"
+            },
+            {
+                "@type": "NewsArticle",
+                "@id": "https://sifatmusfique.dev/#article_redefines_scalable",
+                "headline": "Rising Software Developer Sifat Musfique Redefines Scalable",
+                "url": "https://iwantmyopenid.org/rising-software-developer-sifat-musfique-redefines-scalable.html?amp=1",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Information Technology"
+                }
+            },
+            {
+                "@type": "NewsArticle",
+                "@id": "https://sifatmusfique.dev/#article_sysdesai",
+                "headline": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop",
+                "url": "https://www.sysdesai.com/news/YfdYO9e1oyuF",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Sysdesai News"
+                }
+            },
+            {
+                "@type": "TechArticle",
+                "@id": "https://sifatmusfique.dev/#article_towardsai",
+                "headline": "Building a Production-Grade AI Agent from Scratch in 2026",
+                "url": "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Towards AI"
+                }
             }
         ]
     };
@@ -228,7 +280,48 @@ const Press = () => {
                     </div>
                 </div>
 
-                <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="400">
+                {/* Expandable Technical Guide */}
+                <div className="mt-8 glass-liquid rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-all duration-300 shadow-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div 
+                        className="flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer group gap-4"
+                        onClick={() => setIsAiGuideExpanded(!isAiGuideExpanded)}
+                    >
+                        <div>
+                            <span className="text-xs font-bold px-2 py-1 rounded-md bg-white/10 text-cyan-300 border border-white/5 mb-3 inline-block">Technical Guide</span>
+                            <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                Building a Production-Grade AI Agent from Scratch in 2026
+                            </h3>
+                            <p className="text-gray-400 mt-1">Source: Towards AI</p>
+                        </div>
+                        <div className="p-3 bg-white/5 border border-white/10 rounded-full text-cyan-400 group-hover:bg-white/10 group-hover:scale-110 transition-all">
+                            {isAiGuideExpanded ? <FaChevronUp className="text-lg" /> : <FaChevronDown className="text-lg" />}
+                        </div>
+                    </div>
+                    
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isAiGuideExpanded ? 'max-h-[1000px] mt-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className="h-px bg-white/10 w-full mb-6"></div>
+                        <div className="text-gray-300 space-y-4 leading-relaxed">
+                            <p>
+                                A comprehensive, principles-first guide to building production-grade AI agents from scratch in Python. The article breaks down the evolution of AI agents and emphasizes why <strong>autonomy is a spectrum</strong>, driven by loops like <em>Think → Act → Observe → Repeat</em>.
+                            </p>
+                            <p>
+                                It covers production-critical features essential for enterprise-scale deployment, including <strong>long-term memory, Human-in-the-Loop (HITL)</strong> integration, advanced observability, and robust error recovery mechanisms. The guide provides practical patterns, such as Reflection, Tool Use, Planning, and Collaboration, to avoid common failures and build reliable, self-directing systems.
+                            </p>
+                            <div className="pt-4">
+                                <a 
+                                    href="https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20 hover:text-cyan-300 transition-all border border-cyan-500/20 font-medium"
+                                >
+                                    Read full guide on Towards AI <FaExternalLinkAlt className="text-xs" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="500">
                     <p className="text-gray-400 text-sm">
                         Last Updated: <span className="text-gray-300 font-medium">{lastUpdated}</span>
                     </p>
