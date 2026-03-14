@@ -154,6 +154,13 @@ const Press = () => {
                 "@type": "NewsArticle",
                 "@id": "https://sifatmusfique.dev/#article_redefines_scalable",
                 "headline": "Rising Software Developer Sifat Musfique Redefines Scalable",
+                "image": "https://sifatmusfique.dev/photos/Sifat_Musfique.png",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
+                },
+                "datePublished": "2026-02-16T00:00:00+06:00",
                 "url": "https://iwantmyopenid.org/rising-software-developer-sifat-musfique-redefines-scalable.html?amp=1",
                 "publisher": {
                     "@type": "Organization",
@@ -164,6 +171,13 @@ const Press = () => {
                 "@type": "NewsArticle",
                 "@id": "https://sifatmusfique.dev/#article_sysdesai",
                 "headline": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop",
+                "image": "https://sifatmusfique.dev/photos/mdl_article.png",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
+                },
+                "datePublished": "2026-02-21T00:00:00+06:00",
                 "url": "https://www.sysdesai.com/news/YfdYO9e1oyuF",
                 "publisher": {
                     "@type": "Organization",
@@ -174,6 +188,13 @@ const Press = () => {
                 "@type": "TechArticle",
                 "@id": "https://sifatmusfique.dev/#article_towardsai",
                 "headline": "Building a Production-Grade AI Agent from Scratch in 2026",
+                "image": "https://sifatmusfique.dev/photos/Sifat_Musfique_coding.jpg",
+                "author": {
+                    "@type": "Person",
+                    "name": "Sifat Musfique",
+                    "url": "https://sifatmusfique.dev/"
+                },
+                "datePublished": "2026-03-01T00:00:00+06:00",
                 "url": "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
                 "publisher": {
                     "@type": "Organization",

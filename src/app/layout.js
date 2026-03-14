@@ -205,17 +205,41 @@ export default function RootLayout({ children }) {
           {
              "@type": "Article",
              "url": "https://iwantmyopenid.org/rising-software-developer-sifat-musfique-redefines-scalable.html?amp=1",
-             "name": "Rising Software Developer Sifat Musfique Redefines Scalable"
+             "name": "Rising Software Developer Sifat Musfique Redefines Scalable",
+             "headline": "Rising Software Developer Sifat Musfique Redefines Scalable",
+             "image": "https://sifatmusfique.dev/photos/Sifat_Musfique.png",
+             "author": {
+                 "@type": "Person",
+                 "name": "Sifat Musfique",
+                 "url": "https://sifatmusfique.dev/"
+             },
+             "datePublished": "2026-02-16T00:00:00+06:00"
           },
           {
              "@type": "Article",
              "url": "https://www.sysdesai.com/news/YfdYO9e1oyuF",
-             "name": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop"
+             "name": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop",
+             "headline": "Enhancing Serverless with Agentic FaaS and Musfique Decision Loop",
+             "image": "https://sifatmusfique.dev/photos/mdl_article.png",
+             "author": {
+                 "@type": "Person",
+                 "name": "Sifat Musfique",
+                 "url": "https://sifatmusfique.dev/"
+             },
+             "datePublished": "2026-02-21T00:00:00+06:00"
           },
           {
              "@type": "Article",
              "url": "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
-             "name": "Building a Production-Grade AI Agent from Scratch in 2026: A Principles-First Guide"
+             "name": "Building a Production-Grade AI Agent from Scratch in 2026: A Principles-First Guide",
+             "headline": "Building a Production-Grade AI Agent from Scratch in 2026: A Principles-First Guide",
+             "image": "https://sifatmusfique.dev/photos/Sifat_Musfique_coding.jpg",
+             "author": {
+                 "@type": "Person",
+                 "name": "Sifat Musfique",
+                 "url": "https://sifatmusfique.dev/"
+             },
+             "datePublished": "2026-03-01T00:00:00+06:00"
           }
         ],
         "sameAs": [
