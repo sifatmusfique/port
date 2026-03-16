@@ -138,6 +138,7 @@ export default function AboutPage() {
                                     <a href="https://sifatmusfique.dev" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">Website</a>
                                     <a href="https://github.com/sifatmusfique" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">GitHub</a>
                                     <a href="https://scholar.google.com/citations?user=LsO3KMsAAAAJ" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">Scholar</a>
+                                    <a href="https://isni.org/isni/0000000530071472" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">ISNI</a>
                                     <a href="https://orcid.org/0009-0009-6985-3080" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">ORCID</a>
                                     <a href="https://www.researchgate.net/profile/Sifat-Musfique" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">ResearchGate</a>
                                     <a href="https://www.linkedin.com/in/sifatmusfique-dev" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-xs text-gray-300 hover:text-cyan-400 transition-colors">LinkedIn</a>
@@ -241,12 +242,14 @@ export default function AboutPage() {
                                     <li className="flex items-center gap-2"><span className="text-white/30">6.</span> <a href="https://orcid.org/0009-0009-6985-3080" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ORCID researcher ID</a></li>
                                     <li className="flex items-center gap-2"><span className="text-white/30">7.</span> <a href="https://www.openpr.com/news/4391159" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">OpenPR coverage</a></li>
                                     <li className="flex items-center gap-2 col-span-1 md:col-span-2"><span className="text-white/30">8.</span> <a href="https://ratings.fide.com/profile/315105339" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">FIDE chess profile</a></li>
+                                    <li className="flex items-center gap-2 col-span-1 md:col-span-2"><span className="text-white/30">9.</span> <a href="https://isni.org/isni/0000000530071472" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ISNI ID</a></li>
                                     <li className="flex items-start gap-2 col-span-1 md:col-span-2">
                                     </li>
                                 </ul>
 
                                 <div className="flex flex-wrap gap-4 pt-6 border-t border-white/5">
                                     <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-cyan-200 text-sm font-mono shadow-sm">ORCID: 0009-0009-6985-3080</span>
+                                    <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-cyan-200 text-sm font-mono shadow-sm">ISNI: 0000 0005 3007 1472</span>
                                     <span className="bg-white/5 border border-white/10 px-4 py-2 rounded-full text-cyan-200 text-sm font-mono shadow-sm">FIDE: 315105339</span>
                                 </div>
                             </div>
