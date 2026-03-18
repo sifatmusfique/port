@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
     "url": "https://sifatmusfique.dev/",
     "mainEntityOfPage": "https://sifatmusfique.dev",
     "name": "Sifat Musfique",
-    "jobTitle": "Computer Scientist",
+    "jobTitle": "Software Engineer",
     "description": "Sifat Musfique is a software developer and researcher based in Bangladesh. He is a Computer Science and Engineering (CSE) student at Varendra University focusing on web infrastructure and AI-driven technologies.",
     "nationality": "Bangladeshi",
     "image": [
