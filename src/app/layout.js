@@ -44,7 +44,6 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": "https://www.wikidata.org",
     "url": "https://sifatmusfique.dev/",
     "mainEntityOfPage": "https://sifatmusfique.dev",
     "name": "Sifat Musfique",
@@ -221,7 +220,6 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "ScholarlyArticle",
-        "@id": "https://sifatmusfique.dev/#faas_article",
         "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
         "name": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
         "image": [
@@ -247,7 +245,6 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "ScholarlyArticle",
-        "@id": "https://sifatmusfique.dev/#mdl_article",
         "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
         "name": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
         "image": [
@@ -273,7 +270,6 @@ export default function RootLayout({ children }) {
       },
       {
         "@type": "ScholarlyArticle",
-        "@id": "https://sifatmusfique.dev/#diagnostic_imaging_mdl_article",
         "headline": "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
         "name": "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
         "image": [
