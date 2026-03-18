@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
     "url": "https://sifatmusfique.dev/",
     "mainEntityOfPage": "https://sifatmusfique.dev",
     "name": "Sifat Musfique",
-    "jobTitle": "Software Developer & Researcher",
+    "jobTitle": ["Software Developer", "Researcher"],
     "description": "Sifat Musfique is a software developer and researcher based in Bangladesh. He is a Computer Science and Engineering (CSE) student at Varendra University focusing on web infrastructure and AI-driven technologies.",
     "nationality": "Bangladeshi",
     "image": [
@@ -218,6 +218,84 @@ export default function RootLayout({ children }) {
         },
         "datePublished": "2026-01-10T00:00:00+06:00",
         "dateModified": "2026-01-10T00:00:00+06:00"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://sifatmusfique.dev/#faas_article",
+        "headline": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
+        "name": "Formula-as-a-Service (FaaS): Building and Analyzing a PHP and MySQL Cloud-Based API",
+        "image": [
+          "https://sifatmusfique.dev/photos/faas_article.png"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Sifat Musfique",
+          "url": "https://sifatmusfique.dev/"
+        },
+        "datePublished": "2026-02-16T00:00:00+06:00",
+        "dateModified": "2026-02-16T00:00:00+06:00",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ResearchGate",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sifatmusfique.dev/photos/Sifat_Musfique.png"
+          }
+        },
+        "sameAs": "https://doi.org/10.13140/RG.2.2.31072.14080",
+        "url": "https://www.researchgate.net/publication/400668231_Formula-as-a-Service_Building_and_Analyzing_a_PHP_and_MySQL_Cloud-Based_API"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://sifatmusfique.dev/#mdl_article",
+        "headline": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
+        "name": "Beyond Reactive Architectures: The Musfique Decision Loop (MDL) and the Emergence of Agentic FaaS Systems",
+        "image": [
+          "https://sifatmusfique.dev/photos/mdl_article.png"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Sifat Musfique",
+          "url": "https://sifatmusfique.dev/"
+        },
+        "datePublished": "2026-02-21T00:00:00+06:00",
+        "dateModified": "2026-02-21T00:00:00+06:00",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ResearchGate",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sifatmusfique.dev/photos/Sifat_Musfique.png"
+          }
+        },
+        "sameAs": "https://doi.org/10.13140/RG.2.2.24288.34564",
+        "url": "https://www.researchgate.net/publication/400998778_Beyond_Reactive_Architectures_The_Musfique_Decision_Loop_MDL_and_the_Emergence_of_Agentic_FaaS_Systems"
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": "https://sifatmusfique.dev/#diagnostic_imaging_mdl_article",
+        "headline": "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
+        "name": "Agentic Orchestration in Diagnostic Medical Imaging: A Musfique Decision Loop Approach",
+        "image": [
+          "https://sifatmusfique.dev/photos/diag_imaging_mdl.png"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Sifat Musfique",
+          "url": "https://sifatmusfique.dev/"
+        },
+        "datePublished": "2026-03-03T00:00:00+06:00",
+        "dateModified": "2026-03-03T00:00:00+06:00",
+        "publisher": {
+          "@type": "Organization",
+          "name": "ResearchGate",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sifatmusfique.dev/photos/Sifat_Musfique.png"
+          }
+        },
+        "sameAs": "https://doi.org/10.13140/RG.2.2.21683.28961",
+        "url": "https://www.researchgate.net/publication/401495210_Agentic_Orchestration_in_Diagnostic_Medical_Imaging_A_Musfique_Decision_Loop_Approach"
       },
       {
         "@type": "NewsArticle",
