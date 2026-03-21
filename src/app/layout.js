@@ -364,6 +364,30 @@ export default function RootLayout({ children }) {
         },
         "datePublished": "2026-03-15T00:00:00+06:00",
         "dateModified": "2026-03-15T00:00:00+06:00"
+      },
+      {
+        "@type": "TechArticle",
+        "url": "https://pub.towardsai.net/building-a-high-performance-vector-search-engine-from-scratch-in-2026-9a6d20b516b7",
+        "name": "Building a High-Performance Vector Search Engine from Scratch in 2026",
+        "headline": "Building a High-Performance Vector Search Engine from Scratch in 2026",
+        "image": [
+          "https://sifatmusfique.dev/photos/Sifat_Musfique_coding.jpg"
+        ],
+        "author": {
+          "@type": "Person",
+          "name": "Sifat Musfique",
+          "url": "https://sifatmusfique.dev/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Towards AI",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://sifatmusfique.dev/photos/Sifat_Musfique.png"
+          }
+        },
+        "datePublished": "2026-03-21T00:00:00+06:00",
+        "dateModified": "2026-03-21T00:00:00+06:00"
       }
     ],
     "sameAs": [
@@ -373,6 +397,7 @@ export default function RootLayout({ children }) {
       "https://www.google.com/search?kgmid=/g/11xzgftxps",
       "https://isni.org/isni/0000000530071472",
       "https://www.wikidata.org/wiki/Q138683248",
+      "https://founderswiki.org/index.php/Sifat_Musfique",
       "https://openalex.org/authors/A5125657845",
       "https://orcid.org/0009-0009-6985-3080",
       "https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=LsO3KMsAAAAJ",

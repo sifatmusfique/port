@@ -6,6 +6,7 @@ import { FaAward, FaNewspaper, FaUniversity, FaExternalLinkAlt, FaChevronDown, F
 const Press = () => {
     const [isArticleExpanded, setIsArticleExpanded] = useState(false);
     const [isAiGuideExpanded, setIsAiGuideExpanded] = useState(false);
+    const [isVectorSearchExpanded, setIsVectorSearchExpanded] = useState(false);
 
     const pressItems = [
         {
@@ -86,12 +87,19 @@ const Press = () => {
                     desc: "A principles-first guide on creating an advanced AI agent from scratch with Python, emphasizing efficiency and robustness.",
                     link: "https://pub.towardsai.net/building-a-production-grade-ai-agent-from-scratch-in-2026-a-principles-first-guide-5b21754dc201",
                     highlight: "Technical Guide"
+                },
+                {
+                    title: "Building a High-Performance Vector Search Engine from Scratch in 2026",
+                    source: "Towards AI",
+                    desc: "A comprehensive guide on engineering a high-performance vector search engine from the ground up, focusing on scalability and efficient similarity search.",
+                    link: "https://pub.towardsai.net/building-a-high-performance-vector-search-engine-from-scratch-in-2026-9a6d20b516b7",
+                    highlight: "Technical Guide"
                 }
             ]
         }
     ];
 
-    const lastUpdated = "February 28, 2026";
+    const lastUpdated = "March 21, 2026";
 
     return (
         <section id="press" className="py-20 relative z-10">
@@ -227,7 +235,48 @@ const Press = () => {
                     </div>
                 </div>
 
-                <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="500">
+                {/* Expandable Vector Search Guide */}
+                <div className="mt-8 glass-liquid rounded-2xl p-8 border border-white/5 hover:border-white/10 transition-all duration-300 shadow-lg" data-aos="fade-up" data-aos-delay="500">
+                    <div 
+                        className="flex flex-col md:flex-row justify-between items-start md:items-center cursor-pointer group gap-4"
+                        onClick={() => setIsVectorSearchExpanded(!isVectorSearchExpanded)}
+                    >
+                        <div>
+                            <span className="text-xs font-bold px-2 py-1 rounded-md bg-white/10 text-cyan-300 border border-white/5 mb-3 inline-block">Technical Guide</span>
+                            <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                                Building a High-Performance Vector Search Engine from Scratch in 2026
+                            </h3>
+                            <p className="text-gray-400 mt-1">Source: Towards AI</p>
+                        </div>
+                        <div className="p-3 bg-white/5 border border-white/10 rounded-full text-cyan-400 group-hover:bg-white/10 group-hover:scale-110 transition-all">
+                            {isVectorSearchExpanded ? <FaChevronUp className="text-lg" /> : <FaChevronDown className="text-lg" />}
+                        </div>
+                    </div>
+                    
+                    <div className={`transition-all duration-500 ease-in-out overflow-hidden ${isVectorSearchExpanded ? 'max-h-[1000px] mt-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+                        <div className="h-px bg-white/10 w-full mb-6"></div>
+                        <div className="text-gray-300 space-y-4 leading-relaxed">
+                            <p>
+                                A deep-dive article detailing the architecture and implementation of a modern vector search engine from the ground up. The piece highlights critical engineering choices to achieve high performance and efficient similarity search for AI applications.
+                            </p>
+                            <p>
+                                Key topics include indexing strategies like HNSW, optimizing distance computations, query execution planning, and handling scale efficiently in 2026's AI infrastructure landscape.
+                            </p>
+                            <div className="pt-4">
+                                <a 
+                                    href="https://pub.towardsai.net/building-a-high-performance-vector-search-engine-from-scratch-in-2026-9a6d20b516b7" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20 hover:text-cyan-300 transition-all border border-cyan-500/20 font-medium"
+                                >
+                                    Read full guide on Towards AI <FaExternalLinkAlt className="text-xs" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-12 text-center" data-aos="fade-up" data-aos-delay="600">
                     <p className="text-gray-400 text-sm">
                         Last Updated: <span className="text-gray-300 font-medium">{lastUpdated}</span>
                     </p>
