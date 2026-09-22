@@ -2,31 +2,9 @@
 
 import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { projects } from "@/data/projects";
 
 const Portfolio = () => {
-    const projects = [
-        {
-            title: "E-Commerce Platform",
-            description: "A full-featured online store with cart, checkout, and payments.",
-            tech: ["React", "Node.js", "MongoDB"],
-            image: "https://via.placeholder.com/400x250/0f172a/06b6d4?text=E-Commerce",
-            links: { github: "#", live: "#" }
-        },
-        {
-            title: "Task Management App",
-            description: "Real-time task board with drag-and-drop functionality.",
-            tech: ["Next.js", "Firebase", "Tailwind"],
-            image: "https://via.placeholder.com/400x250/0f172a/3b82f6?text=Task+App",
-            links: { github: "#", live: "#" }
-        },
-        {
-            title: "AI Chat Interface",
-            description: "Modern chat UI integrated with OpenAI API.",
-            tech: ["React", "Tailwind", "OpenAI"],
-            image: "https://via.placeholder.com/400x250/0f172a/a855f7?text=AI+Chat",
-            links: { github: "#", live: "#" }
-        }
-    ];
 
     return (
         <section id="portfolio" className="py-20 bg-[#0a0a0a]">

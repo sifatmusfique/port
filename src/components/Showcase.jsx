@@ -125,6 +125,8 @@ const Showcase = () => {
                                                 <div className="flex items-center justify-between pt-4 border-t border-white/5">
                                                     <a
                                                         href={project.links.live}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
                                                         aria-label={`View live demo of ${project.title}`}
                                                         className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors text-sm font-medium"
                                                     >
