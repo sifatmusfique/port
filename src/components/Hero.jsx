@@ -49,9 +49,13 @@ const Hero = () => {
 
                 {/* Left Content */}
                 <div className="text-left space-y-6 z-10 animate-fade-right">
-                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-fuchsia-500/50 shadow-[0_0_20px_rgba(192,38,211,0.3)] bg-fuchsia-950/30 backdrop-blur-xl hover:border-fuchsia-400 hover:shadow-[0_0_30px_rgba(192,38,211,0.5)] transition-all cursor-default group">
-                        <span className="text-fuchsia-200 text-[13px] font-semibold tracking-wide flex items-center gap-2">
-                            <span className="text-fuchsia-400 group-hover:animate-spin-slow">✨</span> Ready to Innovate
+                    <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-cyan-500/30 shadow-[0_0_20px_rgba(6,182,212,0.2)] bg-cyan-950/30 backdrop-blur-xl hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] transition-all cursor-default group">
+                        <span className="relative flex h-2.5 w-2.5">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span className="text-cyan-200 text-[13px] font-semibold tracking-wide flex items-center gap-1.5">
+                            Available for Novel Projects & Research
                         </span>
                     </div>
 
