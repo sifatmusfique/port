@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FaGithub, FaLinkedin, FaChessKnight, FaWikipediaW } from "react-icons/fa";
+import SkillsHeroVisual from "./SkillsHeroVisual";
 
 const phrases = [
     "Computer Science & Engg. Student",
@@ -131,10 +132,8 @@ const Hero = () => {
                 </div>
 
                 {/* Right Content - Tech Stack Visualization */}
-                <div className="relative hidden md:flex justify-center animate-fade-left">
-                    <div className="relative w-80 h-80 md:w-96 md:h-96">
-
-                    </div>
+                <div className="relative hidden md:flex justify-center items-center animate-fade-left">
+                    <SkillsHeroVisual />
                 </div>
             </div>
         </section>

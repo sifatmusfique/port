@@ -1,4 +1,5 @@
 import Showcase from "@/components/Showcase";
+import SkillsSection from "@/components/SkillsSection";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -43,6 +44,7 @@ export default function PortfolioPage() {
                 </Link>
             </div>
             <Showcase />
+            <SkillsSection />
         </main>
     );
 }

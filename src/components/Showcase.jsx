@@ -2,8 +2,8 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FaReact, FaNodeJs, FaCode, FaAward, FaChevronDown, FaChevronUp, FaGitAlt, FaFilter } from "react-icons/fa";
-import { SiJavascript, SiPostgresql, SiMongodb, SiTailwindcss, SiNextdotjs, SiTypescript, SiPython } from "react-icons/si";
+import { FaReact, FaNodeJs, FaCode, FaAward, FaChevronDown, FaChevronUp, FaGitAlt, FaFilter, FaArrowRight } from "react-icons/fa";
+import { SiJavascript, SiPostgresql, SiMongodb, SiTailwindcss, SiNextdotjs, SiTypescript, SiPython, SiPhp, SiSqlite, SiPuppeteer, SiDocker } from "react-icons/si";
 import { projects } from "@/data/projects";
 import ProjectSpotlightCard from "./ProjectSpotlightCard";
 import Ripple from "./Ripple";
@@ -54,16 +54,18 @@ const Showcase = () => {
     ];
 
     const techStack = [
-        { name: "React", icon: <FaReact />, color: "text-blue-400" },
-        { name: "Next.js", icon: <SiNextdotjs />, color: "text-white" },
-        { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500" },
-        { name: "TypeScript", icon: <SiTypescript />, color: "text-blue-600" },
-        { name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-400" },
-        { name: "Python", icon: <SiPython />, color: "text-blue-500" },
-        { name: "Tailwind", icon: <SiTailwindcss />, color: "text-cyan-400" },
-        { name: "MongoDB", icon: <SiMongodb />, color: "text-green-600" },
-        { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-300" },
-        { name: "Git", icon: <FaGitAlt />, color: "text-orange-500" },
+        { name: "TypeScript", icon: <SiTypescript />, color: "text-sky-400", level: "Expert" },
+        { name: "React 19", icon: <FaReact />, color: "text-cyan-400", level: "Expert" },
+        { name: "Next.js 16", icon: <SiNextdotjs />, color: "text-white", level: "Expert" },
+        { name: "Node.js", icon: <FaNodeJs />, color: "text-emerald-400", level: "Expert" },
+        { name: "Puppeteer", icon: <SiPuppeteer />, color: "text-teal-400", level: "Specialist" },
+        { name: "SQLite WAL", icon: <SiSqlite />, color: "text-blue-400", level: "Advanced" },
+        { name: "PHP 8.2+", icon: <SiPhp />, color: "text-violet-400", level: "Advanced" },
+        { name: "Python 3", icon: <SiPython />, color: "text-blue-400", level: "Advanced" },
+        { name: "Tailwind 4", icon: <SiTailwindcss />, color: "text-cyan-300", level: "Expert" },
+        { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-sky-300", level: "Advanced" },
+        { name: "Docker", icon: <SiDocker />, color: "text-sky-400", level: "Proficient" },
+        { name: "Git", icon: <FaGitAlt />, color: "text-orange-400", level: "Advanced" },
     ];
 
     return (
@@ -107,23 +109,34 @@ const Showcase = () => {
                             <>
                                 {/* Category Filter Pills */}
                                 <div className="flex flex-wrap items-center justify-center gap-2 mb-10" data-aos="fade-up" data-aos-delay="150">
-                                    {categories.map((cat) => (
-                                        <button
-                                            key={cat}
-                                            onClick={() => {
-                                                setSelectedCategory(cat);
-                                                setShowAllProjects(false);
-                                            }}
-                                            className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 flex items-center gap-1.5 ${
-                                                selectedCategory === cat
-                                                    ? "bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.3)]"
-                                                    : "bg-white/5 border border-white/10 text-gray-400 hover:text-gray-200 hover:border-white/20"
-                                            }`}
-                                        >
-                                            {selectedCategory === cat && <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />}
-                                            {cat}
-                                        </button>
-                                    ))}
+                                    {categories.map((cat) => {
+                                        const count = cat === "All"
+                                            ? projects.length
+                                            : projects.filter((p) => p.category === cat).length;
+                                        const isActive = selectedCategory === cat;
+                                        return (
+                                            <button
+                                                key={cat}
+                                                onClick={() => {
+                                                    setSelectedCategory(cat);
+                                                    setShowAllProjects(false);
+                                                }}
+                                                className={`px-4 py-1.5 rounded-full text-xs font-semibold transition-all duration-300 flex items-center gap-2 ${
+                                                    isActive
+                                                        ? "bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 shadow-[0_0_15px_rgba(6,182,212,0.3)]"
+                                                        : "bg-white/5 border border-white/10 text-gray-400 hover:text-gray-200 hover:border-white/20"
+                                                }`}
+                                            >
+                                                {isActive && <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />}
+                                                <span>{cat}</span>
+                                                <span className={`px-1.5 py-0.2 rounded-full text-[10px] ${
+                                                    isActive ? "bg-cyan-400/20 text-cyan-200" : "bg-white/10 text-gray-400"
+                                                }`}>
+                                                    {count}
+                                                </span>
+                                            </button>
+                                        );
+                                    })}
                                 </div>
 
                                 {/* Projects Grid */}
@@ -201,19 +214,34 @@ const Showcase = () => {
                         )}
 
                         {activeTab === "tech" && (
-                            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
-                                {techStack.map((tech, index) => (
-                                    <div
-                                        key={index}
-                                        className="glass-liquid p-6 rounded-2xl flex flex-col items-center justify-center gap-4 transition-all group animate-slide-up border border-white/10 hover:border-cyan-500/30 hover:shadow-[0_0_20px_rgba(6,182,212,0.15)]"
-                                        style={{ animationDelay: `${index * 50}ms` }}
-                                    >
-                                        <div className={`text-5xl ${tech.color} group-hover:scale-110 transition-transform duration-300 filter drop-shadow-lg`}>
-                                            {tech.icon}
+                            <div className="space-y-8 animate-slide-up">
+                                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-5">
+                                    {techStack.map((tech, index) => (
+                                        <div
+                                            key={index}
+                                            className="glass-liquid p-5 rounded-2xl flex flex-col items-center justify-center gap-3 transition-all group border border-white/10 hover:border-cyan-500/40 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)]"
+                                            style={{ animationDelay: `${index * 40}ms` }}
+                                        >
+                                            <div className={`text-4xl ${tech.color} group-hover:scale-110 transition-transform duration-300 filter drop-shadow-lg`}>
+                                                {tech.icon}
+                                            </div>
+                                            <span className="font-semibold text-xs sm:text-sm text-gray-200 group-hover:text-white transition-colors">{tech.name}</span>
+                                            <span className="px-2 py-0.5 rounded-full text-[10px] font-mono bg-white/5 border border-white/10 text-gray-400 group-hover:text-cyan-300 group-hover:border-cyan-500/30">
+                                                {tech.level}
+                                            </span>
                                         </div>
-                                        <span className="font-medium text-gray-300">{tech.name}</span>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
+
+                                <div className="flex justify-center pt-2">
+                                    <a
+                                        href="#skills"
+                                        className="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500/20 to-blue-600/20 hover:from-cyan-500/30 hover:to-blue-600/30 border border-cyan-400/40 text-cyan-300 hover:text-white font-semibold text-sm flex items-center gap-2 shadow-[0_0_20px_rgba(6,182,212,0.2)] transition-all group"
+                                    >
+                                        <span>Explore Full Interactive Skills Matrix & Capabilities</span>
+                                        <FaArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                                    </a>
+                                </div>
                             </div>
                         )}
                     </div>
