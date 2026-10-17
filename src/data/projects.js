@@ -8,7 +8,7 @@ export const projects = [
         about: "TaskPulse was engineered to eliminate heavyweight Redis dependencies for background workers in mid-sized architectures. Built entirely on SQLite with Write-Ahead Logging (WAL), it provides ACID-compliant persistence, priority queues, automated exponential-backoff retries, and an interactive real-time observability dashboard for monitoring worker nodes and throughput latency under sub-millisecond overhead.",
         tech: ["TypeScript", "Node.js", "SQLite", "WebSockets", "Tailwind CSS"],
         image: "/projects/taskpulse.jpg",
-        command: "npm install taskpulse",
+        command: "npm install taskpulse-js",
         links: {
             github: "https://github.com/sifatmusfique/TaskPulse",
             live: "https://github.com/sifatmusfique/TaskPulse"
